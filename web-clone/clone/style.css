@@ -191,6 +191,7 @@ h1 {
     font-size: 1.125rem;
     font-family: 'Neue Montreal', Helvetica, Arial, sans-serif;
     font-weight: normal;
+    margin-bottom: 1.5rem;
 }
 h2 {
     box-sizing: border-box;
@@ -1228,10 +1229,14 @@ font-family: 'Joanna Nova', serif;
     .logo {
         margin: 0;
     }
+    h1 {
+        margin-left: 20%;
+    }
     h2 {
         font-size: 1.875rem;
         line-height: 2.25rem;
         font-weight: 600;
+        width: 416px;
     }
     .instagram-content {
         left: -5%;
