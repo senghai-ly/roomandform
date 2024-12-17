@@ -29,6 +29,7 @@
 body {
     font-family: "Neue Montreal", Helvetica, Arial, sans-serif;
     font-weight: normal;
+    background-color: rgb(248, 247, 243);
     overflow-x: hidden;
 }
 *{
@@ -224,6 +225,9 @@ h2 {
     font-size: 1.25rem;
     line-height: 3rem;
     position: relative;
+}
+.underline-test{
+    text-decoration: underline;
 }
 .olive {
     position: absolute; 
@@ -1187,30 +1191,8 @@ font-family: 'Joanna Nova', serif;
         margin-top: 5%;
         height: 85%;
     }
-    .insta-block-con2, .insta-block-con5, .insta-block-con7, .insta-block-con11{
-        display: none;
-    }
-    .instagram-content{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-        "a   b   b   c"
-        "d   b   b    e";
-    }
-    .insta-block-con1{
-        grid-area: a;
-    }
-    .insta-block-con3{
-        grid-area: b;
-    }
-    .insta-block-con6{
-        grid-area: c;
-    }
-    .insta-block-con8{
-        grid-area: d;
-    }
-    .insta-block-con12{
-        grid-area: e;
-    }
+    
+    
 
 }
 @media (min-width: 640px) and (max-width: 767px){
@@ -1343,6 +1325,7 @@ font-family: 'Joanna Nova', serif;
     .insta-block-con12{
         grid-area: e;
     }
+
 }
 @media (min-width: 0px) and (max-width: 639px){
     .nav-content a{
@@ -1484,33 +1467,61 @@ font-family: 'Joanna Nova', serif;
     .dot {
         display: none;
     }
-    .instagram-content{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 250px 320px 250px;
+}
+@media(max-width:1022px){
+    .instagram-content-block{
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-        "a   b"
-        "c   c"
-        "d   e";
+        "a  b   b   c"
+        "d  b   b   e";
     }
     .insta-block-con1{
         grid-area: a;
     }
     .insta-block-con3{
-        grid-area: c;
-    }
-    .insta-block-con6{
         grid-area: b;
     }
-    .insta-block-con8{
+    .insta-block-con7{
+        grid-area: c;
+    }
+    .insta-block-con11{
         grid-area: d;
     }
     .insta-block-con12{
         grid-area: e;
     }
-    .middle-img{
-        height: 20rem;
+}
+@media(max-width:500px){
+    .middle-img-width img{
+        width: 50%;
+        height: 40%;
     }
-    .detail1,.detail2{
-        font-size: 1.6rem;
+     .instagram-content-block{
+        height: 140vh;
+        display: grid;
+        grid-template-rows: 250px 350px 250px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "a  b"
+        "c  c"
+        "d  e";
+    }
+    .insta-block-con1{
+        grid-area: a;
+    }
+    .insta-block-con7{
+        grid-area: b;
+    }
+    .insta-block-con3{
+        grid-area: c;
+    }
+    .insta-block-con11{
+        grid-area: d;
+    }
+    .insta-block-con12{
+        grid-area: e;
+    }
+    .footer-con{
+        margin-top: 80%;
     }
 }
